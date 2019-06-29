@@ -3,6 +3,7 @@ Simple console USB Relay Module Controller
 
 This utility was created in free pascal (Lazarus) to control USB Relay Module Controller model USBPOWRL002 from Numato.
 You can get more this link: https://numato.com/docs/1-channel-usb-powered-relay-module/
+
 Device: idVendor=2a19, idProduct=0c05
 
 In Window run no problems but in PURE-Linux you may configure device permissions via UDEV:
