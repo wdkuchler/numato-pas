@@ -20,7 +20,7 @@ command to process: Ex.: on, off or pulse
 
 This device is usefull to turn ON and OFF motors, ligths, power supply, etc.
 
-You can run this on WSL (Windows Subsystem for Linux) where device name corresponding:
+You can run this utility on WSL (Windows Subsystem for Linux) where device name corresponding:
 
 Windows COM1 => Linux /dev/ttyS1, Windows COM2 => Linux /dev/ttyS2, Windows COM3 => Linux /dev/ttyS3, etc.
 
