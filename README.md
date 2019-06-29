@@ -13,7 +13,7 @@ Usage:
 numato-pas -d device -c command           
 Where:                                             
 device name: Ex.: /dev/ttyACM0 or COM1              
-command to process: Ex.: ON, OFF or PULSE
+command to process: Ex.: on, off or pulse
 
 This device is usefull to turn ON and OFF motors, ligths, power supply, etc.
 
