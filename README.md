@@ -7,8 +7,11 @@ Device: idVendor=2a19, idProduct=0c05
 
 In Window run no problems but in PURE-Linux you may configure device permissions via UDEV:
 
+create udev rules:
+
 sudo nano /etc/udev/rules.d/70-numato.rules
-	KERNEL=="ttyACM[0-9]*",MODE="0666"
+
+KERNEL=="ttyACM[0-9]*",MODE="0666"
 
 Usage:
 numato-pas -d device -c command           
