@@ -24,4 +24,4 @@ Windows COM3 => Linux /dev/ttyS3
 .
 .
 .
-You can get more this link: https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/
+More this link: https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/
