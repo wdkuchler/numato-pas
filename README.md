@@ -6,6 +6,7 @@ You can get more this link: https://numato.com/docs/1-channel-usb-powered-relay-
 Device: idVendor=2a19, idProduct=0c05
 
 In Window run no problems but in PURE-Linux you may configure device permissions via UDEV:
+
 sudo nano /etc/udev/rules.d/70-numato.rules
 	KERNEL=="ttyACM[0-9]*",MODE="0666"
 
