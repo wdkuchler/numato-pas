@@ -19,7 +19,7 @@ Where:
 device name: Ex.: /dev/ttyACM0 or COM1              
 command to process: Ex.: on, off or pulse
 
-This device is usefull to turn ON and OFF motors, ligths, power supply, etc.
+This device is useful to turn ON and OFF motors, ligths, power supply, etc.
 
 You can run this utility on WSL (Windows Subsystem for Linux) where device name corresponding:
 
