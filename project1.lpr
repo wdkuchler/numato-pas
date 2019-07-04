@@ -16,8 +16,6 @@ type
   protected
     procedure DoRun; override;
   public
-    device: string;
-    command: string;
     constructor Create(TheOwner: TComponent); override;
     destructor Destroy; override;
     procedure Usage; virtual;
@@ -32,6 +30,8 @@ type
   var
     ErrorMsg: string;
     fp: THandle;
+    device: string;
+    command: string;
   begin
     // quick check parameters
     ErrorMsg := CheckOptions('dc', '');
@@ -49,7 +49,7 @@ type
     // parse command parameter
     command := GetOptionValue('c', 'command');
 
-    fp := FileCreate(device, fmOpenReadWrite);
+    fp := FileCreate(device);
     if fp = feInvalidHandle then
     begin
       writeln('Error opening device ' + device);
