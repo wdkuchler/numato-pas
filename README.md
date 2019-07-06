@@ -7,22 +7,20 @@ Device: idVendor=2a19, idProduct=0c05
 
 In Window run no problems but in PURE-Linux you may configure device permissions via UDEV:
 
-create udev rules:
+Important notes for linux users
 
-sudo nano /etc/udev/rules.d/70-numato.rules
+1. Create(sudo) 70-numato.rules file in the /etc/udev/rules.d/ folder with the following content:
+	KERNEL=="ttyACM[0-9]*",MODE="0666"
 
-KERNEL=="ttyACM[0-9]*",MODE="0666"
+2. If you connect the device (USB) for the first time the program will work perfectly.
+
+3. If you disconnect the device and then immediately connect, you will have to wait a few seconds for this program to work.
 
 Usage:
-numato-pas -d device -c command           
-Where:                                             
-device name: Ex.: /dev/ttyACM0 or COM1              
-command to process: Ex.: on, off or pulse
-
-Obs.:
-1. If you connect the device (USB) for the first time the program will work perfectly.
-
-2. If you disconnect the device and then immediately connect, you will have to wait a few seconds for this program to work.
+numato-pas -d device -c command
+Where:
+	device name: Ex.: /dev/ttyACM0 or COM1
+	command to process: Ex.: on, off or pulse
 
 This device is useful to turn ON and OFF motors, ligths, power supply, etc.
 
