@@ -19,6 +19,11 @@ Where:
 device name: Ex.: /dev/ttyACM0 or COM1              
 command to process: Ex.: on, off or pulse
 
+Obs.:
+1. If you connect the device (USB) for the first time the program will work perfectly.
+
+2. If you disconnect the device and then immediately connect, you will have to wait a few seconds for this program to work.
+
 This device is useful to turn ON and OFF motors, ligths, power supply, etc.
 
 You can run this utility on WSL (Windows Subsystem for Linux) where device name corresponding:
