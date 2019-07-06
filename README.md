@@ -18,10 +18,14 @@ KERNEL=="ttyACM[0-9]*",MODE="0666"
 3. If you disconnect the device and then immediately connect, you will have to wait a few seconds for this program to work.
 
 Usage:
+
 numato-pas -d device -c command
+
 Where:
-	device name: Ex.: /dev/ttyACM0 or COM1
-	command to process: Ex.: on, off or pulse
+
+device name: Ex.: /dev/ttyACM0 or COM1
+
+command to process: Ex.: on, off or pulse
 
 This device is useful to turn ON and OFF motors, ligths, power supply, etc.
 
