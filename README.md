@@ -1,5 +1,5 @@
 # numato-pas
-This utility was created in free pascal (Lazarus) to control USB Relay Module Controller model USBPOWRL002 from Numato.
+This console utility was created in free pascal (Lazarus) to control USB Relay Module Controller model USBPOWRL002 from Numato.
 
 You can get more this link: https://numato.com/docs/1-channel-usb-powered-relay-module/
 
