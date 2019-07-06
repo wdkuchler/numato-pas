@@ -7,7 +7,7 @@ Device: idVendor=2a19, idProduct=0c05
 
 In Window run no problems but in PURE-Linux you may configure device permissions via UDEV:
 
-Important notes for linux users
+Important notes for linux users:
 
 1. Create(sudo) 70-numato.rules file in the /etc/udev/rules.d/ folder with the following content:
 
@@ -28,6 +28,9 @@ device name: Ex.: /dev/ttyACM0 or COM1
 command to process: Ex.: on, off or pulse
 
 This device is useful to turn ON and OFF motors, ligths, power supply, etc.
+
+
+Important notes for Linux running into WSL users:
 
 You can run this utility on WSL (Windows Subsystem for Linux) where device name corresponding:
 
