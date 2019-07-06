@@ -10,7 +10,8 @@ In Window run no problems but in PURE-Linux you may configure device permissions
 Important notes for linux users
 
 1. Create(sudo) 70-numato.rules file in the /etc/udev/rules.d/ folder with the following content:
-	KERNEL=="ttyACM[0-9]*",MODE="0666"
+
+KERNEL=="ttyACM[0-9]*",MODE="0666"
 
 2. If you connect the device (USB) for the first time the program will work perfectly.
 
@@ -26,6 +27,10 @@ This device is useful to turn ON and OFF motors, ligths, power supply, etc.
 
 You can run this utility on WSL (Windows Subsystem for Linux) where device name corresponding:
 
-Windows COM1 => Linux /dev/ttyS1, Windows COM2 => Linux /dev/ttyS2, Windows COM3 => Linux /dev/ttyS3, etc.
+Windows COM1 => Linux /dev/ttyS1
+
+Windows COM2 => Linux /dev/ttyS2
+
+Windows COM3 => Linux /dev/ttyS3, etc.
 
 More this link: https://blogs.msdn.microsoft.com/wsl/2017/04/14/serial-support-on-the-windows-subsystem-for-linux/
