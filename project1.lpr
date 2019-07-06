@@ -119,8 +119,10 @@ type
     i: longint;
   begin
     for i := 0 to wake.Length - 1 do
+    begin
       FileWrite(fp, wake.Chars[i], 1);
-    FileFlush(fp);
+      Sleep(5);
+    end;
   end;
 
   procedure TMyApplication.Activate(fp: THandle);
@@ -129,8 +131,10 @@ type
     i: longint;
   begin
     for i := 0 to openIt.Length - 1 do
+    begin
       FileWrite(fp, openIt.Chars[i], 1);
-    FileFlush(fp);
+      Sleep(5);
+    end;
   end;
 
   procedure TMyApplication.Deactivate(fp: THandle);
@@ -139,8 +143,10 @@ type
     i: longint;
   begin
     for i := 0 to closeIt.Length - 1 do
+    begin
       FileWrite(fp, closeIt.Chars[i], 1);
-    FileFlush(fp);
+      Sleep(5);
+    end;
   end;
 
 var
